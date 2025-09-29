@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Most Played Roblox Games</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      background: linear-gradient(270deg, #0b0b3b, #1a0033, #002b36, #0d1b2a, #000000);
+      background-size: 1200% 1200%;
+      animation: darkRgbShift 20s ease infinite;
+    }
+
+    @keyframes darkRgbShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    a {
+        text-decoration: none;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      gap: 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: transform 0.4s ease, color 0.4s ease;
+    }
+
+    nav a:hover {
+      transform: scale(1.2);
+      color: #1e90ff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    .game {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      margin: 20px 0;
+      padding: 40px 20px;
+      border-radius: 15px;
+      overflow: hidden;
+      cursor: pointer;
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .game::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      border-radius: 15px;
+      z-index: 1;
+      transition: backdrop-filter 0.4s ease;
+    }
+
+    .game:hover::before {
+      backdrop-filter: blur(6px);
+    }
+
+    .game h2,
+    .game-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .game-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, padding 0.5s ease;
+    }
+
+    .game:hover .game-content {
+      max-height: 300px;
+      padding-top: 15px;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    header img {
+      max-width: 400px;
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="Home.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Games.html">Games</a>
+    <a href="Credits.html">Credits</a>
+  </nav>
+
+  <header id="home">
+    <h1>Most Played Roblox Games</h1>
+    <p>Roblox is an online platform that allows millions of users to create, share, and play games made by the community. With its wide variety of experiences, from adventure to roleplay to competitive games, Roblox has become one of the most popular gaming platforms in the world.</p>
+    <img src="robloxlogoimage.png">
+  </header>
+
+  <div class="container" id="games">
+    <a href="https://www.roblox.com/games/126884695634066/Grow-a-Garden" target="_blank">
+      <div class="game" style="background-image: url('growagarden.png');">
+        <h2>Grow A Garden</h2>
+        <div class="game-content">
+          <p>Grow A Garden lets you plant, harvest, and design your dream virtual garden. Unlock rare plants, decorate with style, and relax in this peaceful Roblox world.</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.roblox.com/games/2753915549/Event-Blox-Fruits" target="_blank">
+      <div class="game" style="background-image: url('bloxfruit.png');">
+        <h2>Blox Fruits</h2>
+        <div class="game-content">
+          <p>Blox Fruits is a sea adventure where players fight bosses, unlock devil fruit powers, and sail the ocean. With constant updates and a massive community, it’s one of Roblox’s most played games.</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.roblox.com/games/109983668079237/Steal-a-Brainrot" target="_blank">
+      <div class="game" style="background-image: url('stealabrainrot.png');">
+        <h2>Steal A Brainrot</h2>
+        <div class="game-content">
+          <p>Steal A Brainrot is a hilarious chaos-filled Roblox experience. Players prank, troll, and challenge each other in unpredictable ways, making it a fan-favorite for laughs.</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.roblox.com/games/79546208627805/99-Nights-in-the-Forest" target="_blank">
+      <div class="game" style="background-image: url('99nightsforest.png');">
+        <h2>99 Nights in the Forest</h2>
+        <div class="game-content">
+          <p>Survive 99 Nights in the Forest by crafting, building, and escaping monsters. Every night gets harder, making survival an intense challenge that keeps players hooked.</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.roblox.com/games/920587237/Adopt-Me" target="_blank">
+      <div class="game" style="background-image: url('adoptme.png');">
+        <h2>Adopt Me</h2>
+        <div class="game-content">
+          <p>Adopt Me lets players raise pets, trade rare items, and build dream homes. With its massive trading system and creative freedom, it’s one of Roblox’s most iconic games.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</body>
+</html>

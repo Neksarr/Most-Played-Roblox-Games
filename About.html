@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Roblox Hub - About</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Blurry background image fills the whole page */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: url("robloxlogoimage.png") no-repeat center/cover;
+      filter: blur(12px);
+      transform: scale(1.1);
+      z-index: -2;
+    }
+
+    /* Dark overlay for readability */
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: -1;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.85);
+      padding: 15px;
+      gap: 40px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: transform 0.4s ease, color 0.4s ease;
+    }
+
+    nav a:hover {
+      transform: scale(1.2);
+      color: #1e90ff;
+    }
+
+    .content {
+      flex: 1;
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .content h1 {
+      font-size: 45px;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 19px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: rgba(0,0,0,0.85);
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="games.html">Games</a>
+    <a href="Credits.html">Credits</a>
+  </nav>
+
+  <div class="content">
+    <h1>About Roblox</h1>
+    <p>Roblox is an online platform that allows people all over the world to create, share, and play games made by the community. Launched in 2006, Roblox has grown into one of the largest user-generated gaming ecosystems, with millions of players logging in daily.</p>
+
+    <p>What makes Roblox unique is its game creation system. Players, also known as developers, can use Roblox Studio to design their own virtual worlds, complete with scripting, building, and custom features. These creations are then shared with the Roblox community, allowing anyone to play them for free.</p>
+
+    <p>From roleplaying and simulation games to competitive battles and adventure quests, Roblox offers endless possibilities. It’s not just a platform for fun  it’s also a place for learning, creativity, and even earning through the Roblox economy. For many players, Roblox is more than a game  it’s a global community.</p>
+  </div>
+
+  <footer>
+    <p>© 2025 Roblox Hub | Made for Fans, by Fans</p>
+  </footer>
+
+</body>
+</html>

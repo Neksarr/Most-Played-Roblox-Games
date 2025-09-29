@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Roblox Hub - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Blurry background image fills the whole page */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: url("robloxlogoimage.png") no-repeat center/cover;
+      filter: blur(12px);
+      transform: scale(1.1); /* prevent blur cutoff */
+      z-index: -2;
+    }
+
+    /* Dark overlay for readability */
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: -1;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.85);
+      padding: 15px;
+      gap: 40px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: transform 0.4s ease, color 0.4s ease;
+    }
+
+    nav a:hover {
+      transform: scale(1.2);
+      color: #1e90ff;
+    }
+
+    header {
+      text-align: center;
+      padding: 120px 20px;
+      flex: 1;
+    }
+
+    header h1 {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: #1e90ff;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #0c5eaf;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: rgba(0,0,0,0.85);
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="games.html">Games</a>
+    <a href="Credits.html">Credits</a>
+  </nav>
+
+  <header>
+    <h1>Welcome to Roblox Hub</h1>
+    <p>Your ultimate guide to the most popular and exciting Roblox games. Discover adventures, roleplays, and endless fun created by the Roblox community!</p>
+    <a href="games.html" class="btn">Explore Games</a>
+  </header>
+
+  <footer>
+    <p>© 2025 Roblox Hub | Made for Fans, by Fans</p>
+  </footer>
+
+</body>
+</html>
